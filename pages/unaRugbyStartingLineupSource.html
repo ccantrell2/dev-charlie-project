@@ -1,0 +1,293 @@
+<xmp>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>UnaRugbyStartingLineup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+<style>
+  /* an import */
+@import
+url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+
+/* Position and location */
+body {
+  background-color: #990099;
+  background-image:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 28" width="56" height="28"%3E%3Cpath fill="%239C92AC" fill-opacity="0.4" d="M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z"%3E%3C/path%3E%3C/svg%3E');
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family:Copperplate, fantasy;
+}
+
+h4 {
+  color: #FFFFFF;
+  font-family:Copperplate, fantasy;
+}
+
+p2 {
+  color: #FFFFFF;
+}
+
+#field {
+  height: 885px;
+  width: 885px;
+  border: 5px solid white;
+  background-color: #009900;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#reserves {
+  height: 460px;
+  width: 225px;
+  border: 10px solid black;
+  background-color: #FFFF00;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#officers {
+  height: 310px;
+  width: 225px;
+  border: 10px solid black;
+  background-color: #FFFF00;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#tryLine1 {
+  height: 75px; 
+  width: 880px;
+  margin: auto; 
+  border: 3px solid white;
+  background-color: #009900;
+}
+
+#twentyFiveYardLine1 {
+  height: 150px; 
+  width: 880px;
+  margin: auto; 
+  border: 3px solid white;
+  background-color: #009900;
+}
+
+#fiftyYardLine {
+  height: 500px;
+  width: 880px;
+  margin: auto;
+  border: 3px solid white;
+  background-color: #009900;
+}
+
+#twentyFiveYardLine2 {
+   height: 150px; 
+  width: 880px;
+  margin: auto; 
+  border: 3px solid white;
+  background-color: #009900;
+}
+
+#tryLine2 {
+  height: 75px; 
+  width: 880px;
+  margin: auto; 
+  border: 3px solid white;
+  background-color: #009900;
+}
+
+.firstRow > div {
+  height: 75px;
+  width: 105px;
+  background-color: #FFFF00;
+  margin: 35px;
+}
+
+.secondRow > div {
+  height: 75px;
+  width: 105px;
+  background-color: #FFFF00;
+  margin: 35px;
+}
+
+.thirdRow > div {
+  height: 75px;
+  width: 105px;
+  background-color: #FFFF00;
+  margin: 35px; 
+}
+
+#seal {
+  height: 90px;
+  width: 47px;
+/*   margin: 15px; */
+  border: 2px solid white;
+  background-color: #006699;
+  rotate: -180deg;
+  left: 50px;
+  position: relative;
+}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--  
+Author: Cohen Cantrell
+Class: CIS-376
+Date: 2/10/2025
+-->
+<!-- Create a html document -->
+<!DOCTYPE html>
+<!-- a <title>  -->
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>UNA Rugby Starting Lineup</title>
+</head>
+<body>
+
+<!-- A clear <h1> brand -->
+<center>
+<h1>UNA Rugby Starting Lineup</h1>
+<!-- a short description to explain what the purpose of this page is -->
+<h4>This is an on field representation of the starting kickoff lineup for the UNA Rugby Team.</h4>
+</center>
+
+<!-- Layout of a physical space -->
+  <div id="field">
+    
+    <div id="tryLine1">
+    <center><h1><strong>IN-GOAL AREA</strong</h1></center>
+      </div>
+  
+    <div id="twentyFiveYardLine1"></div>
+    
+    <div id="fiftyYardLine">
+      
+      <div class="row firstRow">
+        <div class="col-md-1">14 -<br>Carson Kerr</div>
+        <div class ="col-md-1">13 -<br>Jakob Nienast</div>
+        <div class ="col-md-1">2 -<br>Jackson Pollard</div>
+        <div class ="col-md-1">1 -<br>Cohen Cantrell</div>
+        <div class = "col-md-1">3 -<br>Aaron Wright</div>
+    </div>
+        
+      <div class="row secondRow">
+        <div class="col-md-1">12 -<br>Mohale Molibeli</div>
+        <div class ="col-md-1">7 -<br>Kunming Fu</div>
+        <div class ="col-md-1">4 -<br>Trystan Tapia</div>
+        <div class ="col-md-1">5 -<br>Jackson Bonney</div>
+        <div class = "col-md-1">6 -<br>Silas Russel</div>
+    </div>
+      
+      <div class="row thirdRow">
+        <div class="col-md-1">15 -<br>Brady Hardin</div>
+        <div class ="col-md-1">10 -<br>Cameron McKenzie</div>
+        <div class ="col-md-1">9 -<br>Hlomla Hlabangana</div>
+        <div class ="col-md-1">8 -<br>Isaiah Phillips</div>
+        <div class = "col-md-1">11 -<br>Hongyi Wu</div>
+    </div>
+  </div>
+    
+    <div id="twentyFiveYardLine2"></div>
+    
+    <div id="tryLine2">
+      <center><h1><strong>IN-GOAL AREA</strong</h1></center>
+        </div>
+        
+      </div>
+  
+  <div id="reserves">
+    <center><h2><u>Reserves</u></h2></center>
+    <ul>
+      <strong>
+      <li>
+        <p>Jameer Walker</p>
+      </li>
+      <li>
+        <p>Brooks Ward</p>
+      </li>
+      <li>
+        <p>Jack Busby</p>
+      </li>
+      <li>
+        <p>Micah Bullard</p>
+      </li>
+      <li>
+        <p>Thomas Ross</p>
+      </li>
+      <li>
+        <p>Gary "Trey" Williams</p>
+      </li>
+      <li>
+        <p>James Cannon</p>
+      </li>
+      <li>
+        <p>Aidan Smith</p>
+      </li>
+      <li>
+        <p>Beomgyo "Matt" Jang</p>
+      </li>
+      </strong>
+    </ul>
+  </div>
+  
+  <div id="officers">
+    <center><h2><u>Officers</u></h2></center>
+    <p><strong><u>President:</u></strong> Cohen Cantrell</p>
+    <p><strong><u>Vice-President:</u></strong> Hlomla Hlabangana</p>
+    <p><strong><u>Secretary:</u></strong> Jackson Bonney</p>
+    <p><strong><u>Treasurer:</u></strong> Jackson Pollard</p>
+  </div>
+  
+<!-- Class mascot standing on it's head -->
+  <div id="seal"><h1>🦭<h1></div>
+
+<!-- Link to wireframe and original codepen -->
+<ul2>
+  <li>
+  <p2>Link to the <a href= "https://codepen.io/ccantrell2/pen/qEWGJKx" target="_blank">original codepen</a></p2>
+  </li>
+  <li>
+  <p2>Link to <a href= "https://drive.google.com/file/d/19LohWMc7rVQCMKHv2QCQ3EksfquEfZGp/view?usp=drive_link" target="_blank">my Wireframe</a></p2>
+  </li>
+    </ul2>
+    </body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+<script>
+  // Invoke a doc ready function
+$(document).ready(
+  function() {
+// Interact with the console
+    console.log("Hello World!");
+    
+//     Move an item
+    $('.firstRow').draggable();
+    $('.secondRow').draggable();
+    $('.thirdRow').draggable();
+ 
+// create some part of your layout with a loop (I took this section of code from your codepen and redid it for my data becuase I wanted to use the append method to create another row)
+    for(i = 0; i <5; i++)
+    {
+      console.log(i); 
+      $('.thirdRow').append('<div class="kick">What a Kick!!!</div>');
+    }
+})
+</script>
+
+</body>
+</html>
+</xmp>
